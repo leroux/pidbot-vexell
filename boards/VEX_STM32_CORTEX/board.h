@@ -189,9 +189,9 @@
  * PE1  - Output - 50MHz           - SPI CSB
  * PE7  - Digital input 10
  * PE8  - Digital input 7
- * PE9  - Digital input 1 - Push Pull Output (set to LOW)
+ * PE9  - Digital input 1 - Push Pull Output (LOW) - for solenoid
  * PE10 - Digital input 8
- * PE11 - Digital input 2 - Push Pull Output (set to LOW)
+ * PE11 - Digital input 2 - Push Pull Output (LOW) - for solenoid
  * PE12 - Digital input 9
  * PE13 - Digital input 5
  * PE14 - Digital input 6
