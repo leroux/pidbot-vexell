@@ -9,10 +9,8 @@ void armLockInit(void) {
 }
 
 void armLockRun(void) {
-  if(!armLockPressed && vexControllerGet(BTN_ARM_LOCK_TOGGLE)) {
+  if(!armLockPressed && vexControllerGet(BTN_ARM_LOCK_TOGGLE))
     vexDigitalPinSet(armLock, 1 - vexDigitalPinGet(armLock));
-    vexDigitalPinSet(kVexDigital_3, 1 - vexDigitalPinGet(kVexDigital_3));
-  }
   armLockPressed = vexControllerGet(BTN_ARM_LOCK_TOGGLE);
 }
 

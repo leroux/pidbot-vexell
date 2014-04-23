@@ -6,8 +6,8 @@
 static vexDigiCfg digitalConfig[kVexDigital_Num] = {
   { armLock,        kVexSensorDigitalOutput, kVexConfigOutput, 0 },
   { hangerLock,     kVexSensorDigitalOutput, kVexConfigOutput, 0 },
-  { kVexDigital_3,  kVexSensorDigitalOutput, kVexConfigOutput, 0 },
-  { kVexDigital_4,  kVexSensorDigitalOutput, kVexConfigOutput, 0 },
+  { kVexDigital_3,  kVexSensorDigitalInput,  kVexConfigInput,  0 },
+  { kVexDigital_4,  kVexSensorDigitalInput,  kVexConfigInput,  0 },
   { kVexDigital_5,  kVexSensorDigitalInput,  kVexConfigInput,  0 },
   { kVexDigital_6,  kVexSensorDigitalInput,  kVexConfigInput,  0 },
   { kVexDigital_7,  kVexSensorDigitalInput,  kVexConfigInput,  0 },

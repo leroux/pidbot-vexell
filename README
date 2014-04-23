@@ -1,4 +1,4 @@
-vexell
-======
+pidbot-vexell
+=============
 
-Figuring out how to run Haskell on the VEX Cortex microcontroller.
+Something using the vexell library, a haskell library leveraging convex.

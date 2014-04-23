@@ -9,10 +9,8 @@ void hangerLockInit(void) {
 }
 
 void hangerLockRun(void) {
-  if(!hangerLockPressed && vexControllerGet(BTN_HANGER_LOCK_TOGGLE)) {
+  if(!hangerLockPressed && vexControllerGet(BTN_HANGER_LOCK_TOGGLE))
     vexDigitalPinSet(hangerLock, 1 - vexDigitalPinGet(hangerLock));
-    vexDigitalPinSet(kVexDigital_4, 1 - vexDigitalPinGet(kVexDigital_4));
-  }
   hangerLockPressed = vexControllerGet(BTN_HANGER_LOCK_TOGGLE);
 }
 
