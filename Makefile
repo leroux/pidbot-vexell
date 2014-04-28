@@ -14,3 +14,6 @@ $(HSDIR)/hs_main.c: hs_src/Main.hs
 clean:
 	rm -rf build_haskell
 	make -f forc.mk clean
+
+shell:
+	screen /dev/tty.usbmodem1421 115200

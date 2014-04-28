@@ -1,6 +1,6 @@
 #include "rts/conc.h"
 
-#define THREADS_STACK_SIZE 512
+#define THREADS_STACK_SIZE 584
 #define NUM_THREADS 5
 
 static char pool_buf[(THD_WA_SIZE(THREADS_STACK_SIZE)) * NUM_THREADS];
@@ -18,9 +18,8 @@ void jhc_mutex_lock(jhc_mutex_t *mutex) {
 void jhc_mutex_unlock(jhc_mutex_t *mutex) {
   jhc_mutex_t *unlocked = chMtxUnlock();
 
-  if (unlocked != mutex) {
+  if (unlocked != mutex)
     abort();
-  }
 }
 
 void forkOS_createThread_init() {
@@ -33,9 +32,8 @@ jhc_threadid_t forkOS_createThread(void *(*wrapper)(void *), void *entry, int *e
 
   tid = chThdCreateFromMemoryPool(&pool_descriptor, NORMALPRIO, (tfunc_t) wrapper, entry);
 
-  if (NULL == tid) {
+  if (NULL == tid)
     abort();
-  }
 
   return tid;
 }

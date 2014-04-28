@@ -167,4 +167,6 @@ int main(void) {
 
     chThdSleepMilliseconds(50);
   }
+
+  return 0;
 }
